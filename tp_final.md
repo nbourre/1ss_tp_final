@@ -53,9 +53,12 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
   * Courriel
   * Est administrateur
 
-
 ## Connexion
 * S'inscrire
 * Se connecter
 * Se déconnecter
 * Se rappeler du mot de passe
+
+## Autres
+* Pour jouer un morceau, l'application simulera une lecture de fichier audio. Il n'y aura pas de fichier audio réel. La progression de la lecture sera simulée par un timer avec une barre de progression.
+  * Toutefois, si vous voulez utiliser des fichiers audio réels, vous pouvez le faire.
