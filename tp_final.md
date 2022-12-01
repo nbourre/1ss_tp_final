@@ -1,5 +1,8 @@
 # Lecteur de musique
 
+## Énoncé
+Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit simuler un lecteur de musique classique avec les fonctionnalités qui sont décrites ci-dessous.
+
 # Fonctionnalités
 Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 
@@ -20,7 +23,7 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 * Supprimer un morceau de la liste des morceaux disponibles
   * Seul l'utilisateur qui a ajouté le morceau peut le supprimer
 * Mettre à jour les informations d'un morceau
-  * Chaque morceau doit avoir le titre, l'artiste, la durée, le genre, l'année de sortie, le chemin vers le fichier audio, l'album et la pochette de l'album
+  * Chaque morceau doit avoir le titre, l'artiste, la durée (entier), le genre, l'année de sortie, le chemin vers le fichier audio, l'album et la pochette de l'album
     * Voir la section Album
 * Rechercher un morceau par titre, artiste, genre, année de sortie, album
 * Apprécier un morceau
@@ -62,3 +65,8 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 ## Autres
 * Pour jouer un morceau, l'application simulera une lecture de fichier audio. Il n'y aura pas de fichier audio réel. La progression de la lecture sera simulée par un timer avec une barre de progression.
   * Toutefois, si vous voulez utiliser des fichiers audio réels, vous pouvez le faire.
+
+## Schéma de la base de données
+Voici le schéma de la base de données que vous devez utiliser pour ce projet.
+
+![Schéma de la base de données](mrd.png)
