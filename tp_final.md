@@ -101,3 +101,4 @@ Voici le schéma de la base de données que vous devez utiliser pour ce projet.
 * [Navigation - WPF MVVM TUTORIAL - Mediator Design Pattern](https://www.youtube.com/watch?v=bBoYHl3pLEo)
 * [Navigating Between Views - Full App](https://www.youtube.com/watch?v=W4n0U3BM-0s)
   * Plusieurs vidéos qui montre comment faire une application complète avec MVVM et navigation entre les vues
+* [Page de login](https://www.youtube.com/watch?v=Hslw1czgvsc&list=PLA8ZIAm2I03ggP55JbLOrXl6puKw4rEb2&index=2)
