@@ -3,9 +3,24 @@
 ## Énoncé
 Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit simuler un lecteur de musique classique avec les fonctionnalités qui sont décrites ci-dessous.
 
+## Informations supplémentaires
+* Vous devez utiliser le patron MVVM pour ce projet.
+* Chacun doit développer sa partie du projet. Vous devez donc utiliser Git pour gérer le projet.
+* Voici les différentes parties du projet :
+  * Fenêtre de connexion
+  * Contrôle utilisateur pour les listes de lecture de l'utilisateur
+  * Contrôle utilisateur pour les morceaux de la liste de lecture
+  * Contrôle utilisateur pour l'album de musique
+  * Contrôle utilisateur pour afficher l'ensemble des morceaux disponibles
+
+## Questions
+* Si vous avez des questions, vous pouvez les poser en émettant un [*issue*](https://github.com/nbourre/1ss_tp_final/issues).
+
 # Sommaire <!-- omit in toc -->
 - [Lecteur de musique](#lecteur-de-musique)
   - [Énoncé](#énoncé)
+  - [Informations supplémentaires](#informations-supplémentaires)
+  - [Questions](#questions)
 - [Fonctionnalités](#fonctionnalités)
   - [Listes de lecture](#listes-de-lecture)
   - [Morceaux](#morceaux)
@@ -14,7 +29,6 @@ Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit sim
   - [Connexion](#connexion)
   - [Autres](#autres)
   - [Schéma de la base de données](#schéma-de-la-base-de-données)
-- [Informations supplémentaires](#informations-supplémentaires)
 - [Références intéressantes](#références-intéressantes)
 
 
@@ -86,15 +100,6 @@ Voici le schéma de la base de données que vous devez utiliser pour ce projet.
 
 ![Schéma de la base de données](mrd.png)
 
-# Informations supplémentaires
-* Vous devez utiliser le patron MVVM pour ce projet.
-* Chacun doit développer sa partie du projet. Vous devez donc utiliser Git pour gérer le projet.
-* Voici les différentes parties du projet :
-  * Fenêtre de connexion
-  * Contrôle utilisateur pour les listes de lecture de l'utilisateur
-  * Contrôle utilisateur pour les morceaux de la liste de lecture
-  * Contrôle utilisateur pour l'album de musique
-  * Contrôle utilisateur pour afficher l'ensemble des morceaux disponibles
 
 # Références intéressantes
 * [WPF - Navigation entre les vues](https://www.youtube.com/watch?v=1_cUgpWqS0Y)
