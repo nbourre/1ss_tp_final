@@ -3,6 +3,21 @@
 ## Énoncé
 Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit simuler un lecteur de musique classique avec les fonctionnalités qui sont décrites ci-dessous.
 
+# Sommaire <!-- omit in toc -->
+- [Lecteur de musique](#lecteur-de-musique)
+  - [Énoncé](#énoncé)
+- [Fonctionnalités](#fonctionnalités)
+  - [Listes de lecture](#listes-de-lecture)
+  - [Morceaux](#morceaux)
+  - [Album](#album)
+  - [Utilisateur](#utilisateur)
+  - [Connexion](#connexion)
+  - [Autres](#autres)
+  - [Schéma de la base de données](#schéma-de-la-base-de-données)
+- [Informations supplémentaires](#informations-supplémentaires)
+- [Références intéressantes](#références-intéressantes)
+
+
 # Fonctionnalités
 Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 
@@ -70,3 +85,19 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 Voici le schéma de la base de données que vous devez utiliser pour ce projet.
 
 ![Schéma de la base de données](mrd.png)
+
+# Informations supplémentaires
+* Vous devez utiliser le patron MVVM pour ce projet.
+* Chacun doit développer sa partie du projet. Vous devez donc utiliser Git pour gérer le projet.
+* Voici les différentes parties du projet :
+  * Fenêtre de connexion
+  * Contrôle utilisateur pour les listes de lecture de l'utilisateur
+  * Contrôle utilisateur pour les morceaux de la liste de lecture
+  * Contrôle utilisateur pour l'album de musique
+  * Contrôle utilisateur pour afficher l'ensemble des morceaux disponibles
+
+# Références intéressantes
+* [WPF - Navigation entre les vues](https://www.youtube.com/watch?v=1_cUgpWqS0Y)
+* [Navigation - WPF MVVM TUTORIAL - Mediator Design Pattern](https://www.youtube.com/watch?v=bBoYHl3pLEo)
+* [Navigating Between Views - Full App](https://www.youtube.com/watch?v=W4n0U3BM-0s)
+  * Plusieurs vidéos qui montre comment faire une application complète avec MVVM et navigation entre les vues
