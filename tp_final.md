@@ -22,7 +22,7 @@ Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit sim
   - [Informations supplémentaires](#informations-supplémentaires)
   - [Questions](#questions)
 - [Fonctionnalités](#fonctionnalités)
-  - [Listes de lecture](#listes-de-lecture)
+  - [Listes de lecture (*playlist*)](#listes-de-lecture-playlist)
   - [Morceaux](#morceaux)
   - [Album](#album)
   - [Utilisateur](#utilisateur)
@@ -35,7 +35,7 @@ Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit sim
 # Fonctionnalités
 Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 
-## Listes de lecture
+## Listes de lecture (*playlist*)
 * Créer une nouvelle playlist
 * Afficher les playlists existantes
 * Afficher le contenu d'une playlist
@@ -45,19 +45,25 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 * Jouer en lecture aléatoire une playlist
 * Jouer le prochain morceau ou le précédent d'une playlist
 * Afficher la durée totale d'une playlist ainsi que le nombre de morceaux
+* Supprimer une liste de lecture
+  * Seul l'utilisateur qui a ajouté la liste de lecture peut la supprimer ou l'administrateur
+* Rechercher une playlist publique par nom
 
 ## Morceaux
 * Afficher la liste des morceaux disponibles
 * Ajouter un nouveau morceau à la liste des morceaux disponibles
 * Supprimer un morceau de la liste des morceaux disponibles
   * Seul l'utilisateur qui a ajouté le morceau peut le supprimer
+  * Ne pas oublier de le supprimer de toutes les playlists
+  * Pour supprimer un morceau d'un album, il faudra le dissocier de l'album en le mettant dans l'album "Unknown album"
+  * Pour supprimer définitivement un morceau, il devra être associé à l'album "Unknown album"
 * Mettre à jour les informations d'un morceau
-  * Chaque morceau doit avoir le titre, l'artiste, la durée (entier), le genre, l'année de sortie, le chemin vers le fichier audio, l'album et la pochette de l'album
+  * Chaque morceau doit avoir le titre, l'artiste, la durée (entier), le genre, l'année de sortie, le chemin vers le fichier audio et l'album
     * Voir la section Album
 * Rechercher un morceau par titre, artiste, genre, année de sortie, album
 * Apprécier un morceau
   * Cette fonctionnalité génère une playlist "Liked songs" qui contient tous les morceaux appréciés par l'utilisateur
-* Jouer/Mettre en pause un morceau
+* Jouer/Arrêter/Mettre en pause un morceau
 
 ## Album
 * Afficher la liste des morceaux
@@ -66,6 +72,7 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
 * Supprimer un album
     * Seul l'utilisateur qui a ajouté l'album peut le supprimer.
     * La suppression d'un album ne supprime pas automatiquement les morceaux qui le composent. L'application doit demander à l'utilisateur s'il veut supprimer les morceaux ou non. Si ce n'est pas le cas, les morceaux seront déplacés dans l'album "Unknown album".
+    * Si le morceau n'a pas été créé par l'utilisateur qui a créé l'album, le morceau ne peut pas être supprimé. Il est transféré dans l'album "Unknown album".
 * Note :
   * Un album est une spécialisation d'une playlist
   * Il devra y avoir un album "Unknown Album" qui contient tous les morceaux qui n'ont pas d'album
@@ -78,7 +85,7 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
   * Supprimer un utilisateur
   * Afficher la liste des utilisateurs
   * Rechercher un utilisateur par nom d'utilisateur, courriel
-* La suppression d'un utilisateur ne supprime pas les playlists, albums et morceaux qu'il a ajouté. Toutefois, la propriété de ces éléments est transférée à l'utilisateur administrateur.
+* La suppression d'un utilisateur ne supprime pas les albums et morceaux qu'il a ajouté. Toutefois, la propriété de ces éléments est transférée à l'utilisateur administrateur.
 * Voici les champs que chaque utilisateur devra avoit :
   * Nom d'utilisateur
   * Mot de passe (encrypté)
