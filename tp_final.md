@@ -29,6 +29,7 @@ Vous devez développer un lecteur de musique en WPF et MVVM. Le lecteur doit sim
   - [Connexion](#connexion)
   - [Autres](#autres)
   - [Schéma de la base de données](#schéma-de-la-base-de-données)
+- [Astuces de développement](#astuces-de-développement)
 - [Références intéressantes](#références-intéressantes)
 
 
@@ -86,11 +87,13 @@ Voici la liste des fonctionnalités que devra avoir le lecteur de musique.
   * Afficher la liste des utilisateurs
   * Rechercher un utilisateur par nom d'utilisateur, courriel
 * La suppression d'un utilisateur ne supprime pas les albums et morceaux qu'il a ajouté. Toutefois, la propriété de ces éléments est transférée à l'utilisateur administrateur.
-* Voici les champs que chaque utilisateur devra avoit :
+  * Les playlists de l'utilisateur sont supprimées.
+* Voici les champs que chaque utilisateur devra avoir :
   * Nom d'utilisateur
   * Mot de passe (encrypté)
   * Courriel
   * Est administrateur
+* Il devra toujours y avoir un enregistrement administrateur dans le système.
 
 ## Connexion
 * S'inscrire
@@ -107,6 +110,13 @@ Voici le schéma de la base de données que vous devez utiliser pour ce projet.
 
 ![Schéma de la base de données](mrd.png)
 
+# Astuces de développement
+* Pour les éléments jouables, on vous suggère une interface `IPlayable` qui contient les méthodes suivantes :
+  * `Play()`
+  * `Stop()`
+  * `Pause()`
+  * `Next()`
+  * `Previous()`
 
 # Références intéressantes
 * [WPF - Navigation entre les vues](https://www.youtube.com/watch?v=1_cUgpWqS0Y)
